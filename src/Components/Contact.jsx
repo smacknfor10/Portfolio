@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { assets } from '../assets/assets'
+import { toast } from 'react-toastify';
 
 const Contact = () => {
 
@@ -13,18 +14,20 @@ const Contact = () => {
         formData.append("access_key", "b7326161-78e2-4e40-b2bf-46c7bc036698");
 
         const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        body: formData
+            method: "POST",
+            body: formData
         });
 
         const data = await response.json();
 
         if (data.success) {
-        setResult("Form Submitted Successfully");
-        event.target.reset();
+            setResult("");
+            toast.success("Form Submitted Successfully")
+            event.target.reset();
         } else {
-        console.log("Error", data);
-        setResult(data.message);
+            console.log("Error", data);
+            toast.error(data.message)
+            setResult("");
         }
     };
 
@@ -41,9 +44,8 @@ const Contact = () => {
                     <input type="email" placeholder='Enter Your Email...' required className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white' name='email' />
                 </div>
                 <textarea rows='6' placeholder='Enter Your Message...' className='w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6' name='message'></textarea>
-                <button type="submit" className='py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 cursor-pointer'>Submit Now <img src={assets.right_arrow_white} alt="arrow-right" className='w-4' /></button>
+                <button type="submit" className='py-3 px-8 w-max flex items-center justify-between gap-2 bg-blue-500 text-white rounded-full mx-auto hover:bg-blue-700 duration-500 cursor-pointer'>{result ? result : "Submit Now"} <img src={assets.right_arrow_white} alt="arrow-right" className='w-4' /></button>
 
-                <p className='mt-4'>{result}</p>
             </form>
         </div>
     )

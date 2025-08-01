@@ -12,12 +12,12 @@ const About = () => {
                     <img src={assets.user_image} alt="user" className='w-full rounded-3xl' />
                 </div>
                 <div className='flex-1'>
-                    <p className='mb-10 max-w-2xl font-ovo'>I am an experienced Frontend Developer with over a decade of professional expertise in the field. Throughout my career, I have had the privilege of collaborating with prestigious organizations, contributing to their success and growth.</p>
+                    <p className='mb-10 max-w-2xl font-ovo'>Second-year student at Kelden University. I enjoy designing user interfaces, developing web applications, and contributing to innovation in everyday problems facing society. I have already participated in several academic, professional, and personal projects.</p>
                 
                     {/*==== Card-Information ====*/}
                     <ul className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl'>
                         {infoList.map(({icon, iconDark, title, description}, index)=> (
-                            <li className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500' key={index}>
+                            <li className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:-translate-y-1 duration-500' key={index}>
                                 <img src={icon} alt={title} className='w-7 mt-3' />
                                 <h3 className='my-4 font-semibold text-gray-700'>{title}</h3>
                                 <p className='text-gray-600 text-sm'>{description}</p>

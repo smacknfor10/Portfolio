@@ -17,7 +17,7 @@ const Work = () => {
                                 <h2 className='font-semibold'>{project.title}</h2>
                                 <p className='text-sm text-gray-700'>{project.description}</p>
                             </div>
-                            <div className='border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition'>
+                            <div className='rounded-full w-9 aspect-square flex items-center justify-center '>
                                 <img src={assets.send_icon} alt="send-icon" className='w-5' />
                             </div>
                         </div>
@@ -25,7 +25,7 @@ const Work = () => {
                 ))}
             </div>
 
-            <a href="" className='w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-[#fcf4ff] duration-500'>Show More <img src={assets.right_arrow_bold} alt="right-arrow" className='w-4' /></a>
+            <a href="" className='w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-blue-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-blue-50 duration-500'>Show More <img src={assets.right_arrow_bold} alt="right-arrow" className='w-4' /></a>
         </div>
     )
 }
