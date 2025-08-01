@@ -8,7 +8,7 @@ const Services = () => {
             <h2 className='text-center text-5xl font-ovo'>My Services</h2>
             <p className='text-center max-w-2xl mx-auto mt-5 mb-2 font-ovo'>I am a frontend developer from California, USA with 10 years of experience in multiple companies like Microsoft, Tesla and Apple.</p>
         
-            {/*==== My Services ====*/}
+            {/*==== My Services ====*/} 
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 my-10'>
                 {serviceData.map(({icon, title, description, link }, index)=>(
                     <div key={index} className='border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500'>
