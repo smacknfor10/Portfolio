@@ -31,7 +31,7 @@ const Navbar = () => {
             <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${isScroll ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm" : ""}`}>
                 <a href="#top"><img src={assets.logo} alt="logo" className='w-28 cursor-pointer mr-14'/></a>
                 
-                <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll ? "" : "bg-white shadow-sm bg-opacity-50"}font-ovo`}>
+                <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll ? "" : "bg-white backdrop-blur-lg shadow-sm bg-opacity-50"}font-ovo`}>
                     <li><a href="#top">Home</a></li>
                     <li><a href="#about">About Me</a></li>
                     <li><a href="#services">Services</a></li>
@@ -39,7 +39,7 @@ const Navbar = () => {
                     <li><a href="#contact">Contact Me</a></li>
                 </ul>
                 <div className='flex items-center gap-4'>
-                    <button><img src={assets.moon_icon} alt="moon-icon" className='w-6'/></button>
+                    <button><img src={assets.night} alt="night-icon" className='w-6 cursor-pointer'/></button>
                     <a href="#contact" className='hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4'>Contact <img src={assets.arrow_icon} alt="contact" className='w-3' /></a>
 
                     <button onClick={openMenu} className='block md:hidden ml-3'> <button><img src={assets.menu_black} alt="black-icon" className='w-6'/></button></button>

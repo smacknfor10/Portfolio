@@ -4,7 +4,7 @@ import { assets, infoList, toolsData } from '../assets/assets'
 const About = () => {
     return (
         <div id='about' className='w-full px-[12%] py-10 scroll-mt-20'>
-            <h4 className='text-center mb-2 text-lg'>Introduction</h4>
+            <h4 className='text-center mb-2 text-lg font-ovo'>Introduction</h4>
             <h2 className='text-center text-5xl font-ovo'>About Me</h2>
 
             <div className='flex w-full flex-col lg:flex-row items-center gap-20 my-20'>
@@ -12,7 +12,7 @@ const About = () => {
                     <img src={assets.user_image} alt="user" className='w-full rounded-3xl' />
                 </div>
                 <div className='flex-1'>
-                    <p className='mb-10 max-w-2xl'>I am an experienced Frontend Developer with over a decade of professional expertise in the field. Throughout my career, I have had the privilege of collaborating with prestigious organizations, contributing to their success and growth.</p>
+                    <p className='mb-10 max-w-2xl font-ovo'>I am an experienced Frontend Developer with over a decade of professional expertise in the field. Throughout my career, I have had the privilege of collaborating with prestigious organizations, contributing to their success and growth.</p>
                 
                     {/*==== Card-Information ====*/}
                     <ul className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl'>

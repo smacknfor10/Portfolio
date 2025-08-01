@@ -19,8 +19,8 @@ import profile_img from './profile-img.png';
 import download_icon from './download-icon.png';
 import hand_icon from './hand-icon.png';
 import header_bg_color from './header-bg-color.png';
-import moon_icon from './moon_icon.png';
-import sun_icon from './sun_icon.png';
+import night from './night.png';
+import day from './day.png';
 import arrow_icon from './arrow-icon.png';
 import arrow_icon_dark from './arrow-icon-dark.png';
 import menu_black from './menu-black.png';
@@ -58,8 +58,8 @@ export const assets = {
     download_icon,
     hand_icon,
     header_bg_color,
-    moon_icon,
-    sun_icon,
+    night,
+    day,
     arrow_icon,
     arrow_icon_dark,
     menu_black,
