@@ -2,11 +2,12 @@
 @import "tailwindcss";
 
 *{
-    font-family: "Outfit", sans-serif;
+    font-family: "Ovo", serif !important;
 }
 
-.font-ovo{
-    font-family: "Ovo", serif !important;
+nav{
+    background-color: transparent;
+    backdrop-filter: blur(10px);
 }
 
 @theme{

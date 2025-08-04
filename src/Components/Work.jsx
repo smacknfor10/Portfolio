@@ -5,8 +5,8 @@ const Work = () => {
     return (
         <div id='work' className='w-full px-[12%] py-10 scroll-mt-20'>
             <h4 className='text-center mb-2 text-lg font-ovo'>My portfolio</h4>
-            <h2 className='text-center text-5xl font-ovo'>My latest work</h2>
-            <p className='text-center max-w-2xl mx-auto mt-5 mb-2 font-ovo'>Welcome to my web development portfolio! Explore a collection of projects showcasing my expertise in front-end development.</p>
+            <h2 className='text-center text-5xl font-ovo'>My recent projects</h2>
+            <p className='text-center max-w-2xl mx-auto mt-5 mb-2 font-ovo'>I have already worked and participated in several projects including : personal, academic and business. Here are the recent projects that I have listed and others are in my github account.</p>
         
             {/*==== My Projects ====*/}
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 my-10 gap-5'>
